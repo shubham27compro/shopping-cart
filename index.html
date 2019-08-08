@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>javascript assignment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="container">
+
+  </div>
+  
+  <footer>
+    <h5 id="total_price"> Total Price : </h5>
+    <span id="cartitems">0</span>
+    <button id="clearBtn">Clear Cart</button>
+    <button id="checkoutBtn">Checkout</button>
+  </footer>
+  
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="cartContainer">
+        <div style="display: flex; justify-content: space-around">
+          <b>Cart Items</b> <b> Price </b>
+        </div>
+        <div id="finalcart"> </div>
+        <div style="display: flex; justify-content: space-around">
+          <b>Total Price :</b> <b id="finalprice"></b>
+        </div>
+      </div>
+      <div id="deliveryaddress">
+        <form style="height: 90%; background-color: white" action="">
+          <fieldset>
+            <legend>Delivery Address</legend>
+            <p>Name :<input id="name" type="text" onchange="checkName()"></p>
+            <p>Email :<input id="email" type="email" onchange="checkEmail()"></p>
+            <p>Phone No. :<input id="phoneNo" type="text" onchange="checkPhoneNo()"></p>
+            <p>Address :<input id="address" type="text" onchange="checkAddress()"></p>
+            <p>State :<input id="st" list="states" name="state" onkeyup="setZip()">
+              <datalist id="states">
+                <option value="Delhi">
+                <option value="Himachal Pradesh">
+                <option value="Dehradhun">
+                <option value="Gujrat">
+                <option value="Mumbai">
+              </datalist></p>
+            <p>Zip :<input type="text" id="zip" readonly></p>
+            <input id="placeorder" type="button" value="Place Order">
+          </fieldset>
+        </form>
+
+      </div>
+    </div>
+  </div>
+  <script src="script.js">
+  </script>
+</body>
+
+</html>

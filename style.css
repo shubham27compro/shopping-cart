@@ -1,0 +1,129 @@
+body{
+   font-family: 'Arial', Courier, monospace;
+}
+footer{
+    height: 8%;
+    width: 100%;
+    background-color: #2874f0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex; 
+    align-items: center;
+}
+#container{
+    width: 100%;
+    padding: 3%;
+    margin: auto;
+    margin-bottom: 8%;
+    background: linear-gradient(to bottom, #0d00bf 0%, #09b2ff 100%);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.tile{
+    width: 80%;
+    height: 11em;
+    margin: auto;
+    background-color: whitesmoke;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+}
+@media (min-width: 600px) {
+    #container{
+        width: 80%;
+        margin-bottom: 4%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .tile{
+        width: 26%;
+        margin-bottom: 2%;
+        flex: 0 1 auto;
+    }
+}
+.innerElement{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    margin-top: 0.8em;
+    padding: 2%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.add_btn{
+    width: 48%;
+    margin-top: 1em;
+}
+.remove_btn{
+    float: right;
+    width: 48%;
+    margin-top: 1em;
+}
+#total_price{
+    width: fit-content;
+}
+#cartitems{
+    background-color: white;
+    width: 10%;
+}
+
+#checkoutBtn{
+    margin-left: auto;
+}
+.modal {
+    display: none; 
+    position: fixed; 
+    justify-content: center;
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  .modal-content {
+    background-color: #f1f1f1;
+    border: 1px solid #888;
+    width: 60%;
+    height: 35em;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.8);
+  }
+  .cartContainer{
+    width: 70%;
+    height: 40%;
+    margin: auto;
+    padding: 0.5%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    background-color: #dddddd;
+  }
+  #finalcart{
+      height: 80%;
+      overflow: auto;
+      background-color: white;
+      border: 1px solid black;
+  }
+  .modallistitem{
+      display: flex;
+      justify-content: space-around;
+  }
+  #deliveryaddress{
+    width: 80%;
+    height: 53%;
+    margin: auto;
+    margin-top: 2%;
+    background-color: #dddddd;
+    overflow: auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  }
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
